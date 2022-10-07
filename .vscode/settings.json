@@ -16,6 +16,9 @@
       }
     ],
     "cSpell.words": [
-        "nestjs"
+      "ftaas",
+      "mongod",
+      "nestjs",
+      "preconfigured"
     ]
   }
