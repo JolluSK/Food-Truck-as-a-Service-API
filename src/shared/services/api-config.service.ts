@@ -49,7 +49,7 @@ export class ApiConfigService {
 
   get mongooseOrmConfig() {
     return {
-      MONGODB_URI: this.getString('MONGODB_URI'),
+      MONGODB_URL: this.getString('MONGODB_URL'),
     };
   }
 

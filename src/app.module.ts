@@ -16,7 +16,7 @@ import { ApiConfigService } from './shared/services';
     MongooseModule.forRootAsync({
       imports: [SharedModule],
       useFactory: (configService: ApiConfigService) => ({
-        uri: configService.mongooseOrmConfig.MONGODB_URI,
+        uri: configService.mongooseOrmConfig.MONGODB_URL,
       }),
       inject: [ApiConfigService],
     }),
