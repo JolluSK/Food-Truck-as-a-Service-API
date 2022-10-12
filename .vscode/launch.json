@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "diagnosticLogging": true,
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "nodemon",
+      "runtimeExecutable": "npm",
+      "args": ["run", "start:debug"],
+      "localRoot": "${workspaceRoot}",
+      "restart": false,
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "sourceMaps": true
+    }
+  ]
+}
