@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 import { SharedModule } from './shared/shared.module';
 import { ApiConfigService } from './shared/services';
+import { TruckModule } from './modules';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { ApiConfigService } from './shared/services';
       }),
       inject: [ApiConfigService],
     }),
+    TruckModule,
   ],
 })
-export class AppModule {}
+export class AppModule { }

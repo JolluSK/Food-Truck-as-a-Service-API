@@ -15,7 +15,7 @@ export class TruckController {
     const query = {
       date: new Date(),
     };
-    return this.truckService.findAll(query);
+    return this.truckService.findAll();
   }
 
   @Put(':id')

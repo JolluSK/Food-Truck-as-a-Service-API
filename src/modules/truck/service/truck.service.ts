@@ -11,8 +11,12 @@ export class TruckService {
   ) {}
 
   async create(createTruckDto: CreateTruckDto): Promise<Truck> {
-    const createdTruck = await this.truckModel.create(createTruckDto);
-    return createdTruck;
+    try {
+      const createdTruck = await this.truckModel.create(createTruckDto);
+      return createdTruck;
+    } catch (error) {
+      console.log('77777', error);
+    }
   }
 
   async findAll(query?: any): Promise<Truck[]> {

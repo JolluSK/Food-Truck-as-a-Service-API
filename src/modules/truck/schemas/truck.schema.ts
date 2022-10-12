@@ -5,7 +5,7 @@ export type TruckDocument = Truck & Document;
 
 @Schema({ collection: `truck_table`, timestamps: true })
 export class Truck {
-  @Prop()
+  @Prop({ auto: true })
   _id: MongooseSchema.Types.ObjectId;
 
   @Prop()

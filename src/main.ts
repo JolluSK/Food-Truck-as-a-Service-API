@@ -6,6 +6,7 @@ import { ApiConfigService } from './shared/services';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
 
   const configService = app.select(SharedModule).get(ApiConfigService);
 
